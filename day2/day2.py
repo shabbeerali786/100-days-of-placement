@@ -1,3 +1,5 @@
+// second largest element
+
 n = int(input("Enter number of elements: "))
 
 arr = list(map(int, input("Enter elements: ").split()))
@@ -19,3 +21,21 @@ else:
         print("No second largest element.")
     else:
         print("Second Largest Element:", second_largest)
+        
+        
+        
+    
+    
+// reverse a array
+
+n = int(input("Enter number of elements: "))
+
+arr = list(map(int, input("Enter elements: ").split()))
+
+if len(arr) != n:
+    print("Please enter the correct number of elements!")
+else:
+    print("Reversed Array:")
+
+    for i in range(n - 1, -1, -1):
+        print(arr[i], end=" ")
