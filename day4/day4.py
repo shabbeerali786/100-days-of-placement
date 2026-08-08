@@ -1,3 +1,5 @@
+# anagram PET 8
+
 s1 = input()
 s2 = input()
 sort1 = sorted(s1)
@@ -9,7 +11,8 @@ else:
     
     
     
-////////////////////////////////////////
+    
+# LIST MULTIPLICATION PET 8
 
 n1 = int(input())
 l1 = list(map(int, input().split()))
@@ -26,7 +29,7 @@ print((num1*num2)%mod)
 
 
 
-////////////////////////////////
+# PET 6, TRAP WATER
 
 
 def trap(height):
@@ -56,3 +59,23 @@ def trap(height):
     
 height = list(map(int, input().split()))
 print("trapped water", trap(height))
+
+
+
+
+
+#largest number in a list 
+
+num = list(map(int, (input().split())))
+
+large = num[0]
+
+for i in num:
+    if large < i:
+        large = i
+print(large)
+
+
+
+
+
