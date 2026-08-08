@@ -79,3 +79,22 @@ print(large)
 
 
 
+#second largest number in a list
+
+num = list(map(int, (input().split())))
+
+large = num[0]
+
+second_large = num[0]
+
+for i in num:
+    if large < i:
+        second_large = large
+        large = i
+    elif i > second_large and i != large:
+        second_large = i
+    
+if large == second_large:
+    print("no second large")
+else:
+    print("second_large", second_large)
