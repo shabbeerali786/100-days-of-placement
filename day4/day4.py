@@ -1,4 +1,4 @@
-# anagram PET 8
+1. # anagram PET 8
 
 s1 = input()
 s2 = input()
@@ -12,7 +12,7 @@ else:
     
     
     
-# LIST MULTIPLICATION PET 8
+2. # LIST MULTIPLICATION PET 8
 
 n1 = int(input())
 l1 = list(map(int, input().split()))
@@ -29,7 +29,7 @@ print((num1*num2)%mod)
 
 
 
-# PET 6, TRAP WATER
+3. # PET 6, TRAP WATER
 
 
 def trap(height):
@@ -64,7 +64,7 @@ print("trapped water", trap(height))
 
 
 
-#largest number in a list 
+4. #largest number in a list 
 
 num = list(map(int, (input().split())))
 
@@ -79,7 +79,7 @@ print(large)
 
 
 
-#second largest number in a list
+5. #second largest number in a list
 
 num = list(map(int, (input().split())))
 
@@ -104,8 +104,18 @@ else:
     
     
  
-#  reverse a list
+6. #  reverse a list
 
 arr = list(map(int, (input().split())))
 for i in range(len(arr) -1, -1, -1):
      print(arr[i], end = " ")
+
+
+
+7. #  reverse a string
+
+s = input()
+for i in range(len(s) -1, -1, -1):
+    print(s[i], end = "")           
+
+
