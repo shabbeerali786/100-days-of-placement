@@ -119,3 +119,18 @@ for i in range(len(s) -1, -1, -1):
     print(s[i], end = "")           
 
 
+
+8. # first non repeating character in a string
+
+s = input("enter string: ")
+
+count = {}
+
+for i in s:
+    count[i] = count.get(i, 0) + 1
+for i in s:
+    if count[i] == 1:
+        print("first non repeating charactor: ", i)
+        break
+else:
+    print("no non repeating charactor")
