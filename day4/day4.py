@@ -184,3 +184,14 @@ print(unique)
 
 
 
+12. # count frequency of elements in a list
+
+
+arr = list(map(int, input().split()))
+count = {}
+for i in arr:
+    count[i] = count.get(i, 0) + 1
+for i in count:
+    print(i, "->", count[i])
+    
+
