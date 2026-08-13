@@ -1,3 +1,6 @@
+from os import remove
+
+
 1. # anagram PET 8
 
 s1 = input()
@@ -134,3 +137,31 @@ for i in s:
         break
 else:
     print("no non repeating charactor")
+    
+    
+    
+    
+    
+9. # remove duplicates from a array
+
+arr = list(map(int, input().split()))
+unique = []
+for num in arr:
+    if num not in unique:
+        unique.append(num)
+print(*unique)
+
+
+
+10. # remove duplicates from a string
+
+s = input("Enter string: ")
+
+unique = ""
+
+for ch in s:
+    if ch not in unique:
+        unique += ch
+
+print(unique)
+
