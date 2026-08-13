@@ -195,3 +195,14 @@ for i in count:
     print(i, "->", count[i])
     
 
+13. # count frequency of elements in a string
+
+s = input("Enter string: ")
+
+count = {}
+
+for ch in s:
+    count[ch] = count.get(ch, 0) + 1
+
+for ch in count:
+    print(ch, "->", count[ch])
