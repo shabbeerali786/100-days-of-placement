@@ -141,8 +141,25 @@ else:
     
     
     
+9. # first non repeating number in a list
+
+arr = list(map(int, input().split()))   
+count = {}
+
+for i in arr:
+    count[i] = count.get(i, 0) + 1
     
-9. # remove duplicates from a array
+for i in arr:
+    if count[i] == 1:
+        print("first non repeating number: ", i)
+        break
+else:
+    print("no non repeating number")
+    
+    
+    
+    
+10. # remove duplicates from a array
 
 arr = list(map(int, input().split()))
 unique = []
@@ -153,7 +170,7 @@ print(*unique)
 
 
 
-10. # remove duplicates from a string
+11. # remove duplicates from a string
 
 s = input("Enter string: ")
 
@@ -164,4 +181,6 @@ for ch in s:
         unique += ch
 
 print(unique)
+
+
 
