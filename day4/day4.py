@@ -223,3 +223,26 @@ if s == reverse:
     print("palindrom")
 else:
     print("Not palindrome")
+    
+    
+    
+15. # check if a number is palindrome or not
+
+num = int(input("Enter the number: "))
+str_num = str(num)
+reverse = str_num[::-1]
+
+
+
+16. # check total number vowels and consonants in a string
+
+s = input("Enter the string: ")
+vowels = 0
+constant = 0
+for i in s:
+    if i in "aeiouAEIOU":
+        vowels += 1
+    elif i.isalpha():
+        constant += 1
+print("vowels: ", vowels)
+print("constant: ", constant)
