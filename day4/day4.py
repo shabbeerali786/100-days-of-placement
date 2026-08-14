@@ -1,4 +1,4 @@
-from os import remove
+
 
 
 1. # anagram PET 8
@@ -206,3 +206,20 @@ for ch in s:
 
 for ch in count:
     print(ch, "->", count[ch])
+    
+    
+    
+    
+    
+    
+14. # check if a string is palindrome or not
+
+s = input("Enter the string: ")
+
+reverse = ""
+for i in s:
+    reverse = i + reverse
+if s == reverse:
+    print("palindrom")
+else:
+    print("Not palindrome")
