@@ -228,9 +228,18 @@ else:
     
 15. # check if a number is palindrome or not
 
-num = int(input("Enter the number: "))
-str_num = str(num)
-reverse = str_num[::-1]
+n = int(input("Enter number: "))
+num = n
+reverse = 0
+while n > 0:
+    digit = n%10
+    reverse = reverse * 10 + digit
+    n = n//10
+if num == reverse:
+    print("palindrome")
+else:
+    print("not palindrome")
+
 
 
 
