@@ -255,3 +255,23 @@ for i in s:
         constant += 1
 print("vowels: ", vowels)
 print("constant: ", constant)
+
+
+
+17. # check prime number or not
+
+n = int(input("Enter the number"))
+
+if n < 2:
+    print("Not Prime")
+else:
+    prime =  True
+
+    for i in range(2, n):
+        if n%i == 0:
+            prime = False
+            break
+if prime:
+    print("prime")
+else:
+    print("Not prime")    
